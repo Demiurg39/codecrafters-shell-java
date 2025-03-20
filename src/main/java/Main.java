@@ -7,7 +7,13 @@ public class Main {
         while (true) {
             System.out.print("$ ");
             String input = scanner.nextLine();
+            String[] tokens = input.split("\\s");
+
+            if (tokens[0].equals("exit"))
+                break;
+
             System.out.println(input + ": command not found");
+
         }
 
     }
